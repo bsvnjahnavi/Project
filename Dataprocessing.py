@@ -21,7 +21,7 @@ print(X)
 #4 spliting the Data into train, validate, test
 train, validate, test = \
               np.split(X.sample(frac=1, random_state=42), 
-                       [int(.5*len(X)), int(.8*len(X))])
+                       [int(.6*len(X)), int(.9*len(X))])
 					   
 #5 saving into text files for training, values and testing 
 train.to_csv('training.txt', sep=',', header = False, index=False)
